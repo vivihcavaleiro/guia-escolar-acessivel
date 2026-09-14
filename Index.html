@@ -4,186 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia Escolar Acessível</title>
-    <style>
-        /* CSS REINÍCIO E PALETA DE CORES (Acessível e Suave) */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f4f6f9; /* Fundo suave, sem brilho excessivo */
-            color: #1a252c; /* Texto escuro com alto contraste e boa leitura */
-            line-height: 1.6;
-            padding-bottom: 40px;
-        }
-
-        /* CABEÇALHO */
-        header {
-            background-color: #1e3a8a; /* Azul escuro suave */
-            color: #ffffff;
-            padding: 24px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2rem;
-            margin-bottom: 8px;
-        }
-
-        header p {
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* NAVEGAÇÃO / MENU */
-        nav {
-            background-color: #2563eb;
-            padding: 12px 0;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1rem;
-            padding: 8px 16px;
-            border-radius: 4px;
-        }
-
-        nav a:hover, nav a:focus {
-            background-color: #1e40af;
-            outline: 3px solid #facc15; /* Indicador claro de foco */
-        }
-
-        /* CONTEÚDO PRINCIPAL */
-        main {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-
-        section {
-            background-color: #ffffff;
-            padding: 24px;
-            margin-bottom: 24px;
-            border-radius: 8px;
-            border: 1px solid #d1d5db;
-        }
-
-        h2 {
-            color: #1e3a8a;
-            font-size: 1.5rem;
-            margin-bottom: 16px;
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 8px;
-        }
-
-        /* IMAGEM ACESSÍVEL */
-        .imagem-container {
-            text-align: center;
-            margin-bottom: 24px;
-        }
-
-        .imagem-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            border: 1px solid #cbd5e1;
-        }
-
-        /* INFORMAÇÕES IMPORTANTES (CARDS SIMPLES) */
-        .grid-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 16px;
-            margin-bottom: 20px;
-        }
-
-        .card-info {
-            background-color: #f8fafc;
-            border-left: 5px solid #2563eb;
-            padding: 16px;
-            border-radius: 4px;
-        }
-
-        .card-info h3 {
-            font-size: 1.1rem;
-            color: #0f172a;
-            margin-bottom: 4px;
-        }
-
-        .card-info p {
-            font-size: 1rem;
-            color: #334155;
-        }
-
-        /* LISTA DE DICAS */
-        .lista-dicas {
-            list-style: none;
-        }
-
-        .lista-dicas li {
-            margin-bottom: 12px;
-            padding-left: 28px;
-            position: relative;
-            font-size: 1rem;
-        }
-
-        .lista-dicas li::before {
-            content: "✔";
-            position: absolute;
-            left: 0;
-            color: #16a34a;
-            font-weight: bold;
-        }
-
-        /* BOTÕES VISUALMENTE DESTACADOS */
-        .area-botoes {
-            display: flex;
-            gap: 16px;
-            flex-wrap: wrap;
-            margin-top: 16px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            font-size: 1rem;
-            font-weight: bold;
-            color: #ffffff;
-            background-color: #1d4ed8;
-            border: 2px solid #1e40af;
-            border-radius: 6px;
-            text-decoration: none;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .btn:hover, .btn:focus {
-            background-color: #1e3a8a;
-            outline: 3px solid #facc15;
-        }
-
-        /* RODAPÉ */
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #475569;
-            font-size: 0.9rem;
-        }
-    </style>
+    <!-- Vinculação do arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -206,7 +28,7 @@
     <!-- CONTEÚDO PRINCIPAL -->
     <main id="inicio">
 
-        <!-- IMAGEM ILUSTRATIVA -->
+        <!-- IMAGEM ILUSTRATIVA COM ALT DETALHADO -->
         <div class="imagem-container">
             <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=800&q=80" 
                  alt="Foto da fachada da escola com entrada ampla, bem iluminada e rampas de acesso para estudantes.">
@@ -238,7 +60,7 @@
                 </article>
             </div>
 
-            <!-- BOTÕES DE AÇÃO -->
+            <!-- BOTÕES VISUALMENTE DESTACADOS -->
             <div class="area-botoes">
                 <a href="#informacoes" class="btn">Ver Horários</a>
                 <a href="#contato" class="btn">Falar com a Secretaria</a>
@@ -248,7 +70,7 @@
         <!-- SEÇÃO DE COMUNICAÇÃO ACESSÍVEL -->
         <section id="comunicacao">
             <h2>Comunicação Acessível</h2>
-            <p style="margin-bottom: 12px;">Para melhorar a comunicação entre a comunidade escolar, utilizamos as seguintes diretrizes:</p>
+            <p class="subtitulo-secao">Para melhorar a comunicação entre a comunidade escolar, utilizamos as seguintes diretrizes:</p>
             
             <ul class="lista-dicas">
                 <li>Utilizar linguagem clara.</li>
@@ -272,7 +94,7 @@
                 <li>✅ Ausência de animações, sombras fortes e elementos que piscam.</li>
                 <li>✅ Cores suaves para evitar sobrecarga sensorial.</li>
                 <li>✅ Espaçamento interno e entre elementos bem definido.</li>
-                <li>✅ Navegação simples, previsível e responsiva.</li>
+                <li>✅ Manter a navegação simples e previsível.</li>
             </ul>
         </section>
 
@@ -292,4 +114,4 @@
     </footer>
 
 </body>
-  </html>
+</html>
