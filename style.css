@@ -1,0 +1,202 @@
+/* ==========================================================================
+   RESET & CONFIGURAÇÕES GERAIS (Acessível e Suave)
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9; /* Fundo suave, sem brilho excessivo */
+    color: #1a252c; /* Texto escuro com alto contraste */
+    line-height: 1.6;
+    padding-bottom: 40px;
+}
+
+/* ==========================================================================
+   CABEÇALHO
+   ========================================================================== */
+header {
+    background-color: #1e3a8a; /* Azul escuro e calmo */
+    color: #ffffff;
+    padding: 24px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   MENU DE NAVEGAÇÃO
+   ========================================================================== */
+nav {
+    background-color: #2563eb;
+    padding: 12px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+nav a:hover, 
+nav a:focus {
+    background-color: #1e40af;
+    outline: 3px solid #facc15; /* Indicador claro e visível de foco */
+}
+
+/* ==========================================================================
+   CONTEÚDO PRINCIPAL & SEÇÕES
+   ========================================================================== */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+}
+
+h2 {
+    color: #1e3a8a;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 8px;
+}
+
+.subtitulo-secao {
+    margin-bottom: 12px;
+}
+
+/* ==========================================================================
+   IMAGEM
+   ========================================================================== */
+.imagem-container {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.imagem-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+}
+
+/* ==========================================================================
+   CARDS DE INFORMAÇÕES IMPORTANTES
+   ========================================================================== */
+.grid-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.card-info {
+    background-color: #f8fafc;
+    border-left: 5px solid #2563eb;
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.card-info h3 {
+    font-size: 1.1rem;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.card-info p {
+    font-size: 1rem;
+    color: #334155;
+}
+
+/* ==========================================================================
+   LISTAS
+   ========================================================================== */
+.lista-dicas {
+    list-style: none;
+}
+
+.lista-dicas li {
+    margin-bottom: 12px;
+    padding-left: 28px;
+    position: relative;
+    font-size: 1rem;
+}
+
+.lista-dicas li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #16a34a;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   BOTÕES DE AÇÃO DESTACADOS
+   ========================================================================== */
+.area-botoes {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #1d4ed8;
+    border: 2px solid #1e40af;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover, 
+.btn:focus {
+    background-color: #1e3a8a;
+    outline: 3px solid #facc15;
+}
+
+/* ==========================================================================
+   RODAPÉ
+   ========================================================================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #475569;
+    font-size: 0.9rem;
+}
